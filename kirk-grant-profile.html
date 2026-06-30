@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirk N. Grant | Technology Delivery, Portfolio & PMO Leader</title>
+<meta name="description" content="Professional profile for Kirk N. Grant, technology solution and service delivery leader with experience in portfolio management, PMO, digital transformation, cloud, automation, and enterprise delivery.">
+<style>
+  :root{
+    --navy:#10243E;
+    --charcoal:#222B33;
+    --paper:#FAFAF8;
+    --paper-alt:#F1F1EE;
+    --blue:#2D5C8A;
+    --gold:#A9824A;
+    --line:#DDDBD4;
+    --text:#1B2127;
+    --text-soft:#4B5560;
+    --serif: 'Source Serif 4','Georgia',serif;
+    --sans: 'Inter','Helvetica Neue',Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--text);
+    line-height:1.6;
+  }
+  h1,h2,h3{font-family:var(--serif); font-weight:600; color:var(--navy); margin:0;}
+  a{color:inherit;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 28px;}
+  .eyebrow{
+    text-transform:uppercase; letter-spacing:.14em; font-size:.72rem;
+    color:var(--gold); font-weight:700; margin-bottom:10px; display:block;
+  }
+  /* HERO */
+  header.hero{
+    background:linear-gradient(180deg,var(--navy) 0%, #163351 100%);
+    color:#EDEFF2;
+    padding:64px 0 56px;
+    position:relative;
+    border-bottom:4px solid var(--gold);
+  }
+  header.hero .wrap{display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;}
+  .hero-main{flex:1 1 520px;}
+  .hero h1{
+    color:#fff;
+    font-size:clamp(2.1rem, 4vw, 2.9rem);
+    line-height:1.1;
+  }
+  .hero .role{
+    font-size:1.15rem; color:var(--gold); font-weight:600; margin-top:10px;
+  }
+  .hero .subtitle{
+    color:#C7CFD8; font-size:.98rem; margin-top:8px; letter-spacing:.02em;
+  }
+  .hero .value-statement{
+    margin-top:24px; font-size:1.12rem; max-width:560px; color:#E6E9ED;
+    border-left:3px solid var(--gold); padding-left:18px;
+  }
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px;}
+  .btn{
+    display:inline-block; padding:12px 20px; border-radius:3px; font-size:.92rem;
+    font-weight:600; text-decoration:none; cursor:pointer; border:1px solid transparent;
+    transition:all .15s ease;
+  }
+  .btn-primary{background:var(--gold); color:var(--navy);}
+  .btn-primary:hover{background:#bd9460;}
+  .btn-outline{border-color:#7C8A99; color:#EDEFF2;}
+  .btn-outline:hover{border-color:#fff; background:rgba(255,255,255,.06);}
+  .hero-side{
+    flex:0 0 230px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.15);
+    border-radius:6px; padding:20px; font-size:.88rem; color:#CDD4DB;
+  }
+  .hero-side strong{color:#fff; display:block; margin-bottom:4px;}
+  .hero-side .row{margin-bottom:14px;}
+
+  /* SECTIONS */
+  section{padding:64px 0;}
+  section.alt{background:var(--paper-alt);}
+  .section-head{max-width:680px; margin-bottom:40px;}
+  .section-head h2{font-size:1.8rem;}
+  .section-head p{color:var(--text-soft); margin-top:10px; font-size:1.02rem;}
+
+  /* EXEC SUMMARY */
+  .summary p{font-size:1.12rem; color:var(--charcoal); max-width:820px;}
+
+  /* METRICS */
+  .metric-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+  }
+  .metric-card{
+    background:#fff; border:1px solid var(--line); border-top:3px solid var(--gold);
+    padding:24px 18px; text-align:center; border-radius:4px;
+  }
+  .metric-card .num{font-family:var(--serif); font-size:1.7rem; color:var(--navy); font-weight:700;}
+  .metric-card .label{font-size:.82rem; color:var(--text-soft); margin-top:6px;}
+
+  /* EXPERTISE */
+  .expertise-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:14px;
+  }
+  .exp-card{
+    background:#fff; border:1px solid var(--line); padding:18px 20px; border-radius:4px;
+    display:flex; gap:14px; align-items:flex-start;
+  }
+  .exp-card .dot{
+    flex:0 0 10px; height:10px; width:10px; border-radius:50%; background:var(--blue);
+    margin-top:6px;
+  }
+  .exp-card h3{font-size:1rem; font-family:var(--sans); font-weight:700; color:var(--navy);}
+
+  /* FEATURED EXPERIENCE */
+  .feature-list{display:flex; flex-direction:column; gap:0;}
+  .feature-item{
+    display:grid; grid-template-columns:200px 1fr; gap:26px;
+    padding:26px 0; border-bottom:1px solid var(--line);
+  }
+  .feature-item:first-child{padding-top:0;}
+  .feature-item .tag{
+    font-weight:700; color:var(--blue); font-size:.85rem; text-transform:uppercase; letter-spacing:.05em;
+  }
+  .feature-item h3{font-size:1.15rem; margin-bottom:6px;}
+  .feature-item p{color:var(--text-soft); margin:0; font-size:.97rem;}
+
+  /* NARRATIVE */
+  .narrative{
+    background:var(--navy); color:#E6E9ED; padding:64px 0;
+  }
+  .narrative blockquote{
+    font-family:var(--serif); font-size:1.4rem; line-height:1.6; max-width:780px;
+    border-left:3px solid var(--gold); padding-left:24px; margin:0; font-style:italic;
+  }
+
+  /* NOW FOCUSED ON */
+  .focus-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  .focus-card{
+    background:#fff; border:1px solid var(--line); padding:18px; text-align:center; border-radius:4px;
+  }
+  .focus-card .label{font-weight:700; color:var(--navy); font-size:.95rem;}
+
+  /* CONTACT */
+  .contact-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:30px; align-items:start;
+  }
+  .contact-list{list-style:none; padding:0; margin:0;}
+  .contact-list li{
+    padding:14px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; font-size:.98rem;
+  }
+  .contact-list li span.k{color:var(--text-soft); font-weight:600;}
+  .download-box{
+    background:#fff; border:1px solid var(--line); padding:26px; border-radius:6px;
+  }
+  .download-box .btn{width:100%; text-align:center; margin-bottom:12px;}
+
+  footer{
+    background:var(--charcoal); color:#9BA6B1; text-align:center; padding:26px 0; font-size:.85rem;
+  }
+
+  @media (max-width: 880px){
+    .metric-grid{grid-template-columns:repeat(2,1fr);}
+    .expertise-grid{grid-template-columns:1fr;}
+    .focus-grid{grid-template-columns:repeat(2,1fr);}
+    .feature-item{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    header.hero .wrap{flex-direction:column;}
+    .hero-side{flex:1 1 auto; width:100%;}
+  }
+  :focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-main">
+      <span class="eyebrow">Technology Delivery &amp; Portfolio Leadership</span>
+      <h1>Kirk N. Grant</h1>
+      <div class="role">Technology Solution &amp; Service Delivery Leader</div>
+      <div class="subtitle">Portfolio | Program | PMO | Digital Transformation | Cloud &amp; AI-Enabled Delivery</div>
+      <p class="value-statement">
+        I help organizations bring discipline, visibility, and delivery confidence to complex technology portfolios — from enterprise PMO operations to high-stakes digital transformation recovery.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#" aria-label="Download Kirk Grant's resume">Download Resume</a>
+        <a class="btn btn-outline" href="#" aria-label="View project addendum document">View Project Addendum</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/kirk-n-grant" aria-label="Connect with Kirk Grant on LinkedIn" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="btn btn-outline" href="mailto:kirk.n.grant@example.com" aria-label="Email Kirk Grant">Email Me</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="row"><strong>17+ Years</strong>Accenture &amp; independent consulting</div>
+      <div class="row"><strong>Industries</strong>Life Sciences, Chemicals, Retail, Telecom</div>
+      <div class="row"><strong>Credentials</strong>PMP&reg; &middot; MS Chemical Engineering &middot; BS ChemE/CS</div>
+    </div>
+  </div>
+</header>
+
+<section class="summary">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Executive Summary</span>
+      <h2>A delivery leader who turns complexity into confidence</h2>
+    </div>
+    <p>
+      Kirk N. Grant is a technology delivery and portfolio leader with 20+ years of consulting experience at Accenture, supporting enterprise transformation across Life Sciences, Chemicals, Retail, and Telecommunications. He has led PMO, service delivery, digital operations, enterprise project management, application management, automation, and cloud-enabled modernization initiatives. His work combines disciplined execution, stakeholder leadership, process improvement, and technical fluency to help organizations move from ambiguity to measurable outcomes.
+    </p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Impact Metrics</span>
+      <h2>Results delivered at scale</h2>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card"><div class="num">$700M+</div><div class="label">Digital operations portfolio supported</div></div>
+      <div class="metric-card"><div class="num">20,000+</div><div class="label">Enterprise project plans enabled</div></div>
+      <div class="metric-card"><div class="num">250</div><div class="label">Service contracts transitioned</div></div>
+      <div class="metric-card"><div class="num">$1.5M+</div><div class="label">Client savings delivered</div></div>
+      <div class="metric-card"><div class="num">2,000</div><div class="label">PM hours saved</div></div>
+      <div class="metric-card"><div class="num">80%</div><div class="label">Invoice process effort reduction</div></div>
+      <div class="metric-card"><div class="num">85% → 97%</div><div class="label">SLA improvement</div></div>
+      <div class="metric-card"><div class="num">150</div><div class="label">Global migration projects planned</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Areas of Expertise</span>
+      <h2>Where I add the most value</h2>
+    </div>
+    <div class="expertise-grid">
+      <div class="exp-card"><div class="dot"></div><div><h3>Portfolio &amp; Program Management</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>PMO Design and Optimization</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Enterprise Project Management Platforms</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Digital Marketing Operations</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Application Management Services</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Cloud &amp; Automation Enablement</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>M&amp;A Site Migration Planning</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Executive Reporting &amp; Governance</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>Service Delivery &amp; SLA Management</h3></div></div>
+      <div class="exp-card"><div class="dot"></div><div><h3>AI-Enabled Delivery Innovation</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Featured Experience</span>
+      <h2>Career highlights</h2>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="tag">Life Sciences</div>
+        <div>
+          <h3>Global Pharmaceutical — Enterprise Project Server / Project Online Portfolio</h3>
+          <p>Co-led ransomware recovery and cloud migration for the largest on-premises Microsoft Project Server implementation of its time, spanning 25 instances and 20,000+ projects.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="tag">Chemicals</div>
+        <div>
+          <h3>Global Chemicals — M&amp;A Site Migration PMO</h3>
+          <p>Directed PMO for a global site migration program covering 150 projects, coordinating a team of 30 project managers across multiple geographies.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="tag">Retail</div>
+        <div>
+          <h3>Global Retail — Digital Operations Stabilization</h3>
+          <p>Partnered on the rescue and stabilization of a $700M digital operations portfolio, restoring delivery confidence and governance.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="tag">Digital Marketing</div>
+        <div>
+          <h3>Digital Marketing Operations — Multi-Brand Launch &amp; Automation</h3>
+          <p>Led an 8-brand digital launch with Workfront and Fusion automation, reducing manual process effort and improving cycle time.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="tag">Telecom</div>
+        <div>
+          <h3>Service Delivery — Managed Services Growth</h3>
+          <p>Scaled a managed services practice by transitioning 250 service contracts and growing the portfolio with 19 additional contracts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="narrative">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold);">Working Style</span>
+    <blockquote>
+      My leadership style sits at the intersection of structure and translation: turning executive intent into delivery systems that teams can actually use. I am comfortable in the messy middle — where strategy, stakeholders, platforms, data, vendors, and deadlines all meet for coffee and occasionally argue.
+    </blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Now Focused On</span>
+      <h2>Current advisory priorities</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-card"><div class="label">Cloud Enablement</div></div>
+      <div class="focus-card"><div class="label">AI-Enabled Delivery</div></div>
+      <div class="focus-card"><div class="label">PMO Modernization</div></div>
+      <div class="focus-card"><div class="label">Enterprise Delivery Advisory</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's talk about your delivery challenge</h2>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li><span class="k">Email</span><a href="mailto:kirk.n.grant@example.com">kirk.n.grant@example.com</a></li>
+        <li><span class="k">Phone</span><a href="tel:+12105550123">(210) 555-0123</a></li>
+        <li><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/kirk-n-grant" target="_blank" rel="noopener">linkedin.com/in/kirk-n-grant</a></li>
+      </ul>
+      <div class="download-box">
+        <a class="btn btn-primary" href="#" style="background:var(--navy); color:#fff;" aria-label="Download resume PDF">Download Resume (PDF)</a>
+        <a class="btn btn-outline" style="border-color:var(--navy); color:var(--navy);" href="#" aria-label="Download project addendum PDF">Download Project Addendum (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Kirk N. Grant — KGrant Consulting Services™
+</footer>
+
+</body>
+</html>
